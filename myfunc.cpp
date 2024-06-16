@@ -21,3 +21,7 @@ std::complex<double> Myfunc::divide(const std::complex<double>& a, const std::co
 std::complex<double> Myfunc::useless(const std::complex<double>& a, const std::complex<double>& b) {
     return a / b * b;
 }
+
+std::complex<double> Myfunc::averagefortwo(const std::complex<double>& a, const std::complex<double>& b) {
+    return (a + b) / 2;
+}
