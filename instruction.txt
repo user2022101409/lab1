@@ -1,0 +1,5 @@
+
+g++ -std=c++11 -c -fPIC -o myfunc.o myfunc.cpp
+g++ -std=c++11 -shared -o libmyfunc.so myfunc.o
+g++ -std=c++11 -o test test.cpp -L. -lmyfunc
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.
