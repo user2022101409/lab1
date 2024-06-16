@@ -17,3 +17,7 @@ std::complex<double> Myfunc::multiply(const std::complex<double>& a, const std::
 std::complex<double> Myfunc::divide(const std::complex<double>& a, const std::complex<double>& b) {
     return a / b;
 }
+
+std::complex<double> Myfunc::useless(const std::complex<double>& a, const std::complex<double>& b) {
+    return a / b * b;
+}
