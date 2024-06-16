@@ -1,0 +1,30 @@
+LIB_NAME = myfunc
+CC = g++
+CFLAGS = -Wall -std=c++11
+INSTALL_LIB_DIR = /home/user/2/lib
+INSTALL_INCLUDE_DIR = /home/user/2/include
+
+# Используйте -fPIC для создания позиционно-независимого кода (PIC) для динамической библиотеки
+CFLAGS += -fPIC
+
+SRCS = /home/user/2/myfunc.cpp
+OBJS = $(SRCS:.cpp=.o)
+
+# Цель по умолчанию
+.PHONY: compile
+compile: $(OBJS)
+	$(CC) -shared -o lib$(LIB_NAME).so $(OBJS)
+
+.PHONY: install
+install: compile
+	cp lib$(LIB_NAME).so $(INSTALL_LIB_DIR)
+	cp /home/user/2/myfunc.h $(INSTALL_INCLUDE_DIR)
+
+.PHONY: clean
+clean:
+	rm -f $(OBJS) lib$(LIB_NAME).so
+
+.PHONY: uninstall
+uninstall:
+	rm -f $(INSTALL_LIB_DIR)/lib$(LIB_NAME).so
+	rm -f $(INSTALL_INCLUDE_DIR)/myfunc.h

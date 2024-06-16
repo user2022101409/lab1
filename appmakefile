@@ -1,0 +1,24 @@
+CC = g++
+CFLAGS = -Wall -std=c++11
+APP_NAME = test
+INSTALL_APP_DIR = /home/user/2/app
+LIB_DIR = /home/user/2/lib
+
+SRCS = /home/user/2/test.cpp
+OBJS = $(SRCS:.cpp=.o)
+
+.PHONY: compile
+compile: $(OBJS)
+	$(CC) $(CFLAGS) -o $(APP_NAME) $(OBJS) -L$(LIB_DIR) -lmyfunc
+
+.PHONY: install
+install: compile
+	cp $(APP_NAME) $(INSTALL_APP_DIR)
+
+.PHONY: clean
+clean:
+	rm -f $(OBJS) $(APP_NAME)
+
+.PHONY: uninstall
+uninstall:
+	rm -f $(INSTALL_APP_DIR)/$(APP_NAME)
