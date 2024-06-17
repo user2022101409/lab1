@@ -11,6 +11,7 @@ public:
     static int divide(const int& a, const int b);
     static int square(const int& a);
     static int half(const int& a);
+    static int randomfunc(const int& a, const int& b);
 };
 
 

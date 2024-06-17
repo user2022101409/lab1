@@ -25,3 +25,7 @@ int Testfunc::square(const int& a) {
 int Testfunc::half(const int& a) {
     return a / 2;
 }
+
+int Testfunc::randomfunc(const int& a, const int b) {
+    return a*b + a*2 + b*5;
+}
