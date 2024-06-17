@@ -12,8 +12,8 @@ public:
     static std::complex<double> multiply(const std::complex<double>& a, const std::complex<double>& b);
     static std::complex<double> divide(const std::complex<double>& a, const std::complex<double>& b);
     static std::complex<double> useless(const std::complex<double>& a, const std::complex<double>& b);
-    static std::void_t printhello();
-    static std::int64_t Myfunc::biggestnumber(const std::int64_t a, const std::int64_t b);
+    static void printhello();
+    static int Myfunc::biggestnumber(const int a, const int b);
 };
 
 #endif // MYFUNC_H

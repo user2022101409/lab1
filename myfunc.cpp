@@ -22,11 +22,11 @@ std::complex<double> Myfunc::useless(const std::complex<double>& a, const std::c
     return a / b * b;
 }
 
-std::void_t Myfunc::printhello() {
-    std::count << "Hello world!\n";
+void Myfunc::printhello() {
+    std::cout << "Hello world!\n";
 }
 
-std::int64_t Myfunc::biggestnumber(const std::int64_t a, const std::int64_t b) {
+int Myfunc::biggestnumber(const int a, const int b) {
     if (a > b) { return a; }
     else if (a < b) { return b; }
     return 0;
