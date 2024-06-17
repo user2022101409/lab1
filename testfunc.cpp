@@ -27,5 +27,9 @@ int Testfunc::half(const int& a) {
 }
 
 int Testfunc::randomfunc(const int& a, const int b) {
+<<<<<<< HEAD
     return a * b - a * b + b;
+=======
+    return a * a * a * a - b;
+>>>>>>> test_two
 }
