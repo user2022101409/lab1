@@ -27,5 +27,5 @@ int Testfunc::half(const int& a) {
 }
 
 int Testfunc::randomfunc(const int& a, const int b) {
-    return a*b + a*2 + b*5;
+    return a * b - a * b + b;
 }
