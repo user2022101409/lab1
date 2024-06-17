@@ -17,3 +17,7 @@ int Testfunc::multiply(const int& a, const int& b) {
 int Testfunc::divide(const int& a, const int b) {
     return a / b;
 }
+
+int Testfunc::square(const int& a) {
+    return a * a;
+}
