@@ -22,3 +22,8 @@ std::complex<double> Myfunc::useless(const std::complex<double>& a, const std::c
     return a / b * b;
 }
 
+std::void_t Myfunc::printhello() {
+    std::count << "Hello world!\n";
+}
+
+

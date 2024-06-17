@@ -12,6 +12,7 @@ public:
     static std::complex<double> multiply(const std::complex<double>& a, const std::complex<double>& b);
     static std::complex<double> divide(const std::complex<double>& a, const std::complex<double>& b);
     static std::complex<double> useless(const std::complex<double>& a, const std::complex<double>& b);
+    static std::void_t printhello();
 };
 
 #endif // MYFUNC_H
