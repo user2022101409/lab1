@@ -29,11 +29,11 @@ void Myfunc::printhello() {
 void Myfunc::errormessage(){
     std::cout << "This is the error message. You have done something wrong.\n";
 }
-
+/*
 int Myfunc::biggestnumber(const int a, const int b) {
     if (a > b) { return a; }
     else if (a < b) { return b; }
     return 0;
 }
-
+*/
 

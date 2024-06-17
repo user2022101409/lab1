@@ -14,7 +14,7 @@ public:
     static std::complex<double> useless(const std::complex<double>& a, const std::complex<double>& b);
     static void printhello();
     static void errormessage();
-    static int Myfunc::biggestnumber(const int a, const int b);
+    //static int Myfunc::biggestnumber(const int a, const int b);
 };
 
 #endif // MYFUNC_H
