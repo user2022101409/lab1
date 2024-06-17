@@ -26,4 +26,10 @@ std::void_t Myfunc::printhello() {
     std::count << "Hello world!\n";
 }
 
+std::int64_t Myfunc::biggestnumber(const std::int64_t a, const std::int64_t b) {
+    if (a > b) { return a; }
+    else if (a < b) { return b; }
+    return 0;
+}
+
 
